@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta  name="description" content=" one line description">
+    <meta name="keywords" content="relevant tags sepereated by comma">
+    <meta name="author" content="sar">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            border:3px double red;
+            background-color: aqua;
+            height: 100px;
+            width: 50px;
+        }
+    </style>
+    <script src="./js/EventHandling.js"></script>
+</head>
+<body>
+
+    <button onclick="showAlert()">finish exam</button>
+    <input type="button" value="ADD" onclick="addition(4,5)">
+
+    <p onmouseover="testFun1()" onmouseleave="testFun2()"></p>
+
+    <br>
+    <label>enter your name</label>
+    <input type="text" onfocus="focusFun()" onblur="blurFun()">
+   <br>
+   <label > Change ON/OFF</label>
+   <input type="checkbox" onchange="changeEvent()" >
+
+   <textarea onselect="SelectEvent()"></textarea>
+    </body>
+</html>
